@@ -14,6 +14,10 @@ const errorController = require("./controllers/errorController");
 app.use(express.json({ limit: "50mb" }));
 app.use(cookieParser());
 app.use(cors());
+app.use(cors({
+  origin: "https://messenger-seven-delta.vercel.app", // Replace with your frontend domain
+  credentials: true,  // Allow cookies to be sent with requests
+}));
 
 // Routes
 app.use("/api/user", authRouter);
