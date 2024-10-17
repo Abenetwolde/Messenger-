@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://messenger-backend-seven.vercel.app",
+  "proxy": "https://messenger-backend-seven.vercel.app/api/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

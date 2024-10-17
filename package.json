@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Telegram web app clone to allow sending of text messages, voice notes, making of voice calls and video calls",
   "main": "index.js",
-  "proxy":"http://localhost:4000/",
+  "proxy":"https://messenger-backend-seven.vercel.app/api/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
