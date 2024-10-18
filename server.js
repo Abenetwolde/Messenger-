@@ -15,7 +15,14 @@ mongoose
  
 // Serve client folder
 app.use(express.static(path.join(__dirname, "client", "build")));
-
+app.get("/api/test",async (req, res, next) => {
+  try {
+ res.send("the api is working....") 
+  } catch (error) {
+    console.log(error)
+  }
+  
+});
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
