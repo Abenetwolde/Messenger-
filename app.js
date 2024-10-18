@@ -17,8 +17,8 @@ app.use(cookieParser());
 app.use(cors({
   origin: "*",  // Allow requests from any origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",  // Specify allowed HTTP methods
-  allowedHeaders: "Content-Type,Authorization",  // Specify allowed headers
-  credentials: true,  // Allow cookies to be sent with requests
+  // allowedHeaders: "Content-Type,Authorization",  // Specify allowed headers
+  // credentials: true,  // Allow cookies to be sent with requests
 }));
 
 // Routes
